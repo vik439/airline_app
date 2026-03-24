@@ -1,3 +1,11 @@
+
+
+## Python Script to Load Data
+
+Create a file called `load_data.py` in your project root:
+
+**load_data.py:**
+```python
 import os
 import django
 import random
@@ -574,3 +582,21 @@ def load_data():
 
 if __name__ == "__main__":
     load_data()
+```
+
+## Run the Script
+
+```bash
+# Make sure you're in the project root directory
+python load_data.py
+```
+
+## After Loading Data
+
+1. **Access Admin**: http://127.0.0.1:8000/admin/
+2. **Login** with superuser credentials
+3. **Explore** each model to see data:
+   - Airlines: See all 5 airlines
+   - Flights: View schedules
+   - Bookings: Manage reservations
+   - Payments: Track transactions
